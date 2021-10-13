@@ -1,9 +1,10 @@
-# Just a test file 
+# Finds vowels and consants
 
-# Leap Year
-year = int(input("Enter year\n"))
+words = input("Please enter a word \n")
 
-if((year % 400 == 0) or (year % 100 != 0) and (year % 4 == 0)):   
-    print("Leap Year") 
-else:  
-    print ("Not Leap Year")  
+count = 0
+
+for word in words:
+    if word in "aeiou":
+        count += 1
+print(count)
